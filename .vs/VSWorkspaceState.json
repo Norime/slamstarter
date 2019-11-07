@@ -6,9 +6,10 @@
     "\\public",
     "\\src",
     "\\src\\Controller",
+    "\\src\\DataFixtures",
     "\\src\\Entity",
     "\\templates"
   ],
-  "SelectedNode": "\\templates\\base.html.twig",
+  "SelectedNode": "\\src\\Controller\\ProjectsController.php",
   "PreviewInSolutionExplorer": false
 }

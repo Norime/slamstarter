@@ -7,15 +7,13 @@
     </head>
     <body>
         {% block body %}
-			<h1>3 projects:</h1>
+			<h1>{{projects|length}} projects:</h1>
 			<ul>
-				{% for projects in projects %}
-					{% if projects|length < 10 %}
-						<li>{{projects["name"]}}</li>
-
-					{% endif %}		
+				{% for project in projects %}
+					<li>{{project}}</li>
 				{%endfor%}
 			</ul>
+			<p> {{ projects|join(', ', ' et ') }}</p>
 		{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>

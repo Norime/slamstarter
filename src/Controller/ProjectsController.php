@@ -26,9 +26,9 @@ class ProjectsController extends AbstractController
     public function project(){
 	    $projects = array();
 	 
-        $projects[0]["name"] = "Project 1";
-		$projects[1]["name"] = "Project 2";
-		$projects[2]["name"] = "Project 3";
+        $projects[0] = "Project 1";
+		$projects[1] = "Project 2";
+		$projects[2] = "Project 3";
         return $this->render('base.html.twig',[
             'projects' =>$projects,
         ]);
